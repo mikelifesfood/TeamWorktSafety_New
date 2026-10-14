@@ -1,4 +1,4 @@
-const CACHE_NAME = "teamworkt-safety-public-v6";
+const CACHE_NAME = "teamworkt-safety-public-v7";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -62,13 +62,15 @@ self.addEventListener("fetch", event => {
 
   if (!APP_SHELL.some(path => new URL(path, self.location.href).pathname === url.pathname)) return;
 
+  // Network first, so a new deploy is picked up on the next visit.
+  // The cached copy is only used when the visitor is offline.
   event.respondWith(
-    caches.match(req).then(cached => cached || fetch(req).then(resp => {
+    fetch(req).then(resp => {
       if (resp.ok) {
         const copy = resp.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(req, copy));
       }
       return resp;
-    }))
+    }).catch(() => caches.match(req, {ignoreSearch: true}))
   );
 });

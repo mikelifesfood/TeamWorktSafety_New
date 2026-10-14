@@ -90,4 +90,5 @@ Policy pages: wording in security.html, privacy.html and terms.html is unchanged
 The 01-09 numbers on the security controls were dropped because the list is not a sequence.
 
 Contact form: field names, IDs, honeypot, /api/contact endpoint and success/error handling are unchanged.
-Service worker cache name is v6 so returning visitors get the new files.
+Service worker: cache name v7, and it now fetches from the network first (cached copies are only used offline),
+so returning visitors always get the newest files. The stylesheet link carries ?v=2; bump it when site.css changes.
