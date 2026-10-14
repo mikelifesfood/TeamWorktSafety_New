@@ -75,7 +75,9 @@ Fonts (Google Fonts, already allowed by the CSP in vercel.json):
 - Big Shoulders: headings and the jobsite sign (a signage typeface)
 - Atkinson Hyperlegible: everything people read (designed by the Braille Institute for legibility)
 
-Home page hero: the "NOTICE" sign is HTML, not an image. Its QR code is inline SVG and encodes
+Home page hero: the jobsite photo covers the right two-thirds of the screen and fades into white on its left edge
+(a CSS mask on the image; on phones it sits below the text and fades in from the top).
+The "NOTICE" sign is HTML, not an image. Its QR code is inline SVG and encodes
 https://teamworktsafety.com/#crew. If the page anchor changes, regenerate the code.
 
 New assets:
@@ -91,4 +93,4 @@ The 01-09 numbers on the security controls were dropped because the list is not 
 
 Contact form: field names, IDs, honeypot, /api/contact endpoint and success/error handling are unchanged.
 Service worker: cache name v7, and it now fetches from the network first (cached copies are only used offline),
-so returning visitors always get the newest files. The stylesheet link carries ?v=2; bump it when site.css changes.
+so returning visitors always get the newest files. The stylesheet link carries ?v=3; bump it whenever site.css changes.
