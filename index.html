@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TeamWorkt Safety | Near-miss and injury reporting for small companies</title>
 <meta name="description" content="TeamWorkt Safety lets small construction companies report near misses, hazards and injuries from a phone, assign the fix, check it was done, and keep the record. No paper, no app to download.">
-<meta name="theme-color" content="#011840">
+<meta name="theme-color" content="#0b315c">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -15,7 +15,7 @@
 <meta name="apple-mobile-web-app-title" content="TeamWorkt Safety">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Big+Shoulders:opsz,wght@10..72,600..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -36,192 +36,162 @@
 
 <main id="main">
 
-<!-- Opening: what we do, in the first sentence, next to a real jobsite and the real form -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1>Near-miss and injury reporting for small construction companies.</h1>
-      <p class="lede">Your crew reports a hazard, a near miss or an injury from their phone. You assign the fix, check that it got done, and keep the record. There are no paper forms to chase and no app to download.</p>
+      <p class="lede">Your crew reports what they saw from their phone. You assign the fix, make sure it got done, and keep the record. No paper forms, and no app to download.</p>
       <p class="hero-act">
         <a class="btn" href="#contact">Book a 15-minute walkthrough</a>
         <span class="or">or email <a href="mailto:hello@teamworktsafety.com">hello@teamworktsafety.com</a></span>
       </p>
-      <p class="hero-small">Works in English and Spanish. We're based in Charlotte, North Carolina, and we set up companies anywhere.</p>
+      <p class="hero-where">Based in Charlotte, North Carolina. In use today at <b>RBH Insulation</b> in Southern California.</p>
     </div>
 
-    <figure class="hero-figure">
-      <div class="hero-photo">
-        <img src="assets/jobsite-framing-crew.webp" width="932" height="724" alt="A framing crew at work on a new house. One worker stands at the roof edge, and a supervisor in a hard hat and hi-vis vest watches from the foreground.">
-        <svg viewBox="0 0 932 724" preserveAspectRatio="xMinYMid slice" aria-hidden="true">
-          <path class="ink" d="M212 112C262 150 252 250 172 266C104 280 84 210 96 162C108 114 168 92 222 124"/>
-          <path class="ink" d="M326 98C296 108 266 120 238 134"/>
-          <path class="ink" d="M252 135L236 134L244 120"/>
-        </svg>
-        <p class="tape tape-roof" aria-hidden="true"><span>Roof edge, no tie-off that I can see. That's worth a report.</span></p>
-      </div>
-      <div class="phone">
-        <img src="assets/previews/employee-report-mobile.png" width="430" height="900" alt="The TeamWorkt report form on a phone, with English and Spanish buttons and a reminder to call 911 for emergencies. Shown with sample data.">
-      </div>
-      <figcaption>The report form your crew opens from a link or a QR code on the job. Shown here in demo mode.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- The paper form most shops already use, and the half that goes missing -->
-<section class="paper" aria-labelledby="paper-h">
-  <div class="wrap paper-grid">
-    <div>
-      <div class="clipboard" aria-hidden="true">
-        <div class="clip"></div>
-        <div class="sheet">
-          <p class="sheet-title">Incident / Near Miss Report</p>
-          <div class="f-pair">
-            <div class="f"><span>Date</span><span class="f-line">9/25</span></div>
-            <div class="f"><span>Job site</span><span class="f-line">North Charlotte</span></div>
-          </div>
-          <div class="f"><span>Reported by</span><span class="f-line">M.R.</span></div>
-          <p class="f-label">What happened</p>
-          <div class="f-block">Ladder on the east side slid out</div>
-          <div class="f-block">when I stepped off. Nobody hurt.</div>
-          <div class="f-block"></div>
-          <div class="blank-half">
-            <p class="f-label">Corrective action</p>
-            <div class="f-block"></div>
-            <div class="f-block"></div>
-            <div class="f"><span>Assigned to</span><span class="f-line"></span></div>
-            <div class="f-pair">
-              <div class="f"><span>Date fixed</span><span class="f-line"></span></div>
-              <div class="f"><span>Checked by</span><span class="f-line"></span></div>
+    <figure class="posted">
+      <img class="photo" src="assets/jobsite-framing-crew.webp" width="932" height="724" alt="A framing crew at work on a new house, with a supervisor in a hard hat and hi-vis vest in the foreground.">
+      <div class="sign" role="img" aria-label="Sample jobsite sign: Notice. See a hazard, a close call or an injury? Tell the safety team. Scan the code with your phone camera. English or Spanish. Emergency? Call 911 first.">
+        <span class="screw a"></span><span class="screw b"></span><span class="screw c"></span><span class="screw d"></span>
+        <div class="sign-inner" aria-hidden="true">
+          <div class="sign-bar">Notice</div>
+          <div class="sign-body">
+            <p class="sign-q">See a hazard, a close call or an injury? Tell the safety team.</p>
+            <div class="sign-row">
+              <svg viewBox="0 0 29 29" class="qr" aria-hidden="true" shape-rendering="crispEdges"><path class="qrline" stroke="#071c31" d="M0 0.5h7m3 0h1m4 0h2m5 0h7m-29 1h1m5 0h1m1 0h4m1 0h2m1 0h1m1 0h1m3 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h1m4 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h2m3 0h3m3 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m8 0h6m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h1m5 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h1m2 0h1m2 0h3m1 0h1m1 0h1m-21 1h1m5 0h1m1 0h3m6 0h1m3 0h2m2 0h3m-25 1h2m7 0h2m2 0h1m1 0h2m1 0h1m1 0h2m1 0h2m-26 1h1m3 0h1m1 0h1m1 0h2m1 0h3m1 0h2m4 0h2m-22 1h3m4 0h1m1 0h2m5 0h5m1 0h1m-26 1h1m1 0h1m3 0h1m1 0h4m1 0h1m1 0h2m2 0h2m1 0h2m4 0h1m-29 1h1m1 0h3m2 0h3m7 0h4m1 0h3m2 0h2m-28 1h1m1 0h1m2 0h1m1 0h4m3 0h3m2 0h1m1 0h5m-24 1h1m4 0h2m5 0h1m4 0h2m2 0h1m1 0h1m1 0h1m-29 1h1m1 0h2m1 0h3m4 0h1m2 0h3m7 0h2m-27 1h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h14m1 0h3m-29 1h2m1 0h1m2 0h4m2 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h2m2 0h1m-29 1h1m1 0h1m5 0h1m4 0h1m2 0h1m2 0h1m2 0h3m-25 1h1m2 0h1m1 0h5m4 0h2m1 0h2m1 0h5m1 0h3m-21 1h2m1 0h1m2 0h2m1 0h4m3 0h2m-26 1h7m2 0h2m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m-27 1h1m5 0h1m2 0h1m2 0h1m1 0h2m3 0h2m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m2 0h1m1 0h5m2 0h8m1 0h2m-29 1h1m1 0h3m1 0h1m2 0h3m2 0h3m1 0h1m2 0h1m3 0h2m1 0h1m-29 1h1m1 0h3m1 0h1m4 0h1m1 0h7m1 0h7m-28 1h1m5 0h1m2 0h1m5 0h2m2 0h1m4 0h3m1 0h1m-29 1h7m1 0h1m5 0h2m1 0h1m1 0h1m2 0h5"/></svg>
+              <p>Scan with your phone camera. Most reports take about a minute.<span class="lang">English / Español</span></p>
             </div>
-            <div class="bracket">
-              <svg viewBox="0 0 40 200" preserveAspectRatio="none"><path class="ink" d="M6 4C22 6 20 30 20 70C20 92 26 98 36 100C26 102 20 108 20 130C20 170 22 194 6 196"/></svg>
-              <span class="hand">Who fills in this half?</span>
-            </div>
+            <p class="sign-foot">Emergency? Call 911 and your supervisor first.</p>
           </div>
         </div>
       </div>
-      <p class="sample-tag">A sample form. Yours probably looks a lot like it.</p>
-    </div>
+      <figcaption>A sample of the sign your crew would see on site. The code works. Try it, and it opens the part of this page about the report form.</figcaption>
+    </figure>
+  </div>
+</section>
 
-    <div class="paper-copy">
-      <h2 id="paper-h">You probably already have a form like this.</h2>
-      <p>It lives on a clipboard in the truck, or in a folder back at the office. Filling it out is the easy part.</p>
-      <p class="pull">The hard part is everything after. Who fixes the problem, by when, and does anyone check?</p>
-      <p>TeamWorkt keeps the report and the fix on the same record, so follow-up doesn't depend on somebody's memory. We built it for mom-and-pop shops that want their safety records off paper without paying for a big safety system.</p>
+<section class="problem" aria-labelledby="problem-h">
+  <div class="wrap problem-grid">
+    <h2 id="problem-h">Filling out the report was never the hard part.</h2>
+    <div class="problem-copy">
+      <p>Most small shops already have a form. It sits on a clipboard in the truck or in a folder at the office. What goes missing is everything after it: who fixes the problem, by when, and whether anyone checks the fix.</p>
+      <p>TeamWorkt keeps the report and the fix on one record, so the follow-up doesn't depend on somebody remembering. We started it to take that paperwork off the clipboard for mom-and-pop companies that don't want to pay for a big safety system.</p>
     </div>
   </div>
 </section>
 
-<!-- Crew side -->
 <section class="crew" id="crew" aria-labelledby="crew-h">
   <div class="wrap crew-grid">
-    <div class="crew-copy">
+    <div class="crew-intro">
       <h2 id="crew-h">What your crew sees</h2>
-      <p>A short form that opens from a link or a QR code posted on the job. They say what happened and where, add a photo if they have one, and send it. Most reports take about a minute.</p>
-      <ul class="points">
-        <li><b>English or Spanish</b>One tap switches the whole form, so nobody has to translate for a coworker.</li>
-        <li><b>Their name is optional</b>People can report without signing it. If they leave a phone number or email, you can follow up or thank them.</li>
-        <li><b>Emergencies come first</b>The form tells people to call 911 and their supervisor for anything happening right now. It's for reporting, not for getting help on the spot.</li>
-      </ul>
+      <p>They scan the sign or tap a link, and this opens. They say what happened and where, add a photo if they have one, and send it.</p>
+      <p class="note">Shown with sample data in demo mode.</p>
     </div>
-    <figure class="shot">
-      <img src="assets/previews/employee-report-desktop.png" width="1280" height="900" alt="The TeamWorkt report form on a computer screen, with the English and Spanish switch, a note that reporters can stay anonymous, and the 911 reminder. Sample data.">
-      <figcaption>The same form on a computer, shown in demo mode.</figcaption>
-    </figure>
+    <div class="phone">
+      <img src="assets/previews/employee-report-mobile.png" width="430" height="900" alt="The TeamWorkt report form on a phone, with English and Spanish buttons, a note that the reporter's name is optional, and a reminder to call 911 for emergencies.">
+    </div>
+    <dl class="facts-col">
+      <div><dt>English or Spanish</dt><dd>One tap switches the whole form, so nobody has to translate for a coworker.</dd></div>
+      <div><dt>Name optional</dt><dd>People can report without signing it. If they leave a phone number or email, you can follow up or thank them.</dd></div>
+      <div><dt>911 comes first</dt><dd>The form reminds people to call 911 and their supervisor for anything happening right now.</dd></div>
+    </dl>
   </div>
 </section>
 
-<!-- One report, start to finish -->
 <section class="record" aria-labelledby="record-h">
   <div class="wrap record-grid">
-    <div class="record-intro">
-      <h2 id="record-h">What happens after someone hits send</h2>
-      <p>Every report becomes one record. Each person who touches it adds to the same page, and it doesn't close until a manager has looked at the fix.</p>
-      <p class="note">Here's the ladder report from the paper form above, the way it would move through TeamWorkt. The details are made up for the example.</p>
+    <div class="app-card">
+      <div class="app-card-head"><span class="id">TS-260902</span><span class="kind">Near miss</span><span class="pill done">Closed</span></div>
+      <p class="app-card-sub">Demo Jobsite, North Charlotte</p>
+      <ol class="activity">
+        <li class="key"><span class="what">New report: a ladder slid out when someone stepped off. Photo attached.</span><span class="meta">Crew member, from a phone. 9/25, 7:09 PM</span></li>
+        <li><span class="what">Report status: New → Under review</span><span class="meta">Office manager. 9/25, 9:09 PM</span></li>
+        <li><span class="what">Root cause updated: ladder feet worn smooth.</span><span class="meta">Office manager. 9/25, 9:21 PM</span></li>
+        <li class="key"><span class="what">Corrective action assigned to the site lead, due 9/29.</span><span class="meta">Office manager. 9/26, 7:40 AM</span></li>
+        <li><span class="what">Completion note updated: ladder replaced, old one tagged out. Photo attached.</span><span class="meta">Site lead. 9/26, 8:09 AM</span></li>
+        <li><span class="what">Corrective-action status: Not started → Awaiting verification</span><span class="meta">Site lead. 9/26, 8:09 AM</span></li>
+        <li class="key"><span class="what">Report status: Awaiting verification → Closed</span><span class="meta">Office manager. 9/26, 11:15 AM</span></li>
+      </ol>
     </div>
-    <div class="folder">
-      <div class="folder-tab">TS-260902 <span>Near miss, sample record</span></div>
-      <div class="folder-body">
-        <ol class="log">
-          <li><span class="log-who">Crew member</span><span class="log-what">Reports the ladder that slid at the North Charlotte job and adds a photo.</span><span class="status new">New</span></li>
-          <li><span class="log-who">Office manager</span><span class="log-what">Reads it, confirms the details and notes the cause. The ladder feet were worn smooth.</span><span class="status">Under review</span></li>
-          <li><span class="log-who">Office manager</span><span class="log-what">Assigns the fix to the site lead, due Friday.</span><span class="status">Not started</span></li>
-          <li><span class="log-who">Site lead</span><span class="log-what">Swaps the ladder, tags the old one out of service, and adds a photo and a note.</span><span class="status waiting">Awaiting verification</span></li>
-          <li><span class="log-who">Office manager</span><span class="log-what">Looks at the photo and signs off. The report, the cause, the fix and the sign-off stay together, and can be saved as a PDF.</span><span class="status closed">Closed</span></li>
-        </ol>
-      </div>
+    <div class="record-copy">
+      <h2 id="record-h">One report, start to finish</h2>
+      <p>Every report becomes a single record. Each person who works on it adds to the same history, and it doesn't close until a manager has looked at the fix.</p>
+      <p>Your crew sends it in. A manager reviews it and hands the fix to someone with a due date. That person does the work and adds a photo, and the manager checks it before closing it out.</p>
+      <p class="note">A sample record. The details are made up, but the status names are the ones you'd see in the app.</p>
     </div>
   </div>
 </section>
 
-<!-- Manager side -->
 <section class="office" id="office" aria-labelledby="office-h">
-  <div class="wrap office-grid">
-    <div class="office-copy">
+  <div class="wrap">
+    <div class="office-head">
       <h2 id="office-h">What you see</h2>
-      <p>One screen with every open report, who owns each fix, and what's running late. New and overdue items sit at the top under <i>Needs your attention</i>.</p>
-      <p>When a fix is done, the person who did it adds a note and a photo. You look it over and either close it or send it back.</p>
-      <p>Closed reports keep their whole history: the first report, the notes, the photos and who signed off.</p>
+      <p>One screen for everything that's open. You can see who owns each fix, what's running late and what's waiting on you, from a phone, a tablet or the office computer.</p>
     </div>
     <figure class="dash">
-      <div class="dash-frame">
-        <img src="assets/previews/management-dashboard.png" width="1440" height="1000" alt="The TeamWorkt manager home screen showing counts of open, new, overdue and to-verify reports, a list of reports that need attention, and recent activity. Demo data.">
-        <svg viewBox="0 0 1440 1000" preserveAspectRatio="none" aria-hidden="true">
-          <path class="highlight" d="M858 656L957 649L963 690L866 697Z"/>
-          <path class="ink" d="M735 996C800 920 884 820 900 708"/>
-          <path class="ink" d="M889 721L900 706L907 723"/>
-        </svg>
-      </div>
-      <span class="hand" aria-hidden="true">Late fixes get flagged right on the home screen.</span>
+      <img src="assets/previews/management-dashboard.png" width="1440" height="1000" alt="The TeamWorkt manager home screen: a menu on the left, counts of open, new, overdue and to-verify reports, a Needs your attention list, and a Recent activity log. Demo data.">
+      <figcaption class="regions">
+        <p><b>The menu</b>My Work, Safety Inbox and Corrective Actions.</p>
+        <p><b>Needs your attention</b>New and overdue reports sit at the top, with who they're assigned to.</p>
+        <p><b>Recent activity</b>Every change is logged with who made it and when. Closed records can be saved as a PDF.</p>
+      </figcaption>
     </figure>
   </div>
 </section>
 
-<!-- No app store -->
 <section class="access" aria-labelledby="access-h">
-  <div class="wrap">
-    <p class="url-line" aria-label="safety.yourcompany.com, an example web address"><span class="dim">safety.</span>yourcompany<span class="dim">.com</span></p>
-    <div class="access-grid">
-      <h2 id="access-h">No app store and nothing to install.</h2>
-      <p>TeamWorkt runs in the web browser on phones, tablets and computers. Your crew opens a link and they're in. If someone wants it on their home screen, it can sit there like any other app.</p>
-      <p>If you can get into your company's domain settings, we can put it at your own web address, so your crew sees your name instead of ours. Skipping separate iPhone and Android apps also keeps the cost down for a smaller company.</p>
+  <div class="wrap access-grid">
+    <div class="homescreen"><img src="assets/app-icon-512.png" width="512" height="512" alt="">TeamWorkt Safety</div>
+    <h2 id="access-h">Nothing to download.</h2>
+    <div class="access-text">
+      <p>TeamWorkt runs in the web browser on phones, tablets and computers. Anyone who wants it on their home screen can add it there, and it opens like any other app.</p>
+      <p>If you can get into your company's domain settings, we can put it at your own address, like <span class="addr">safety.yourcompany.com</span>. Skipping separate iPhone and Android apps also keeps the cost down.</p>
     </div>
   </div>
 </section>
 
-<!-- Setup -->
 <section class="setup" id="setup" aria-labelledby="setup-h">
-  <div class="wrap">
-    <div class="setup-head">
+  <div class="wrap setup-grid">
+    <div class="setup-intro">
       <h2 id="setup-h">Getting set up</h2>
-      <p>You don't have to configure software. You send us a few things, and we build it around the way your company already works.</p>
+      <p>You don't configure anything. You send us a few things, and we build TeamWorkt around how you already work.</p>
     </div>
-    <div class="setup-grid">
-      <div class="setup-col">
-        <h3>What we need from you</h3>
-        <ul class="checks">
-          <li>Your logo and colors</li>
-          <li>The people who'll use it, and who handles safety</li>
-          <li>The kinds of reports you want your crew sending</li>
-        </ul>
+    <div>
+      <div class="lists">
+        <div>
+          <h3>You send us</h3>
+          <ul>
+            <li>Your logo and colors</li>
+            <li>Who will use it, and who handles safety</li>
+            <li>The kinds of reports you want from your crew</li>
+          </ul>
+        </div>
+        <div>
+          <h3>We handle</h3>
+          <ul>
+            <li>The report form and what's on it</li>
+            <li>Who can see what, and who gets notified</li>
+            <li>How fixes get assigned and checked</li>
+            <li>A walkthrough with whoever runs safety at your company</li>
+          </ul>
+        </div>
       </div>
-      <div class="setup-col">
-        <h3>What we do</h3>
-        <p>We set up the report form, everyone's role, how fixes get assigned, and who gets notified. Then we walk through it with whoever runs safety at your company and change what needs changing. When it's right, you get a link and a QR code to hand to the crew.</p>
-        <span class="hand">Got a step we didn't think of? Tell us.</span>
-      </div>
+      <p class="setup-after">Then you get a link and a QR code for a sign like the one at the top of this page. If your process has a step we didn't think of, tell us.</p>
     </div>
   </div>
 </section>
 
-<!-- Who's behind it -->
 <section class="who" aria-labelledby="who-h">
   <div class="wrap who-grid">
     <div class="who-copy">
       <h2 id="who-h">Who's behind it</h2>
-      <p class="lead">TeamWorkt Safety is a small company in Charlotte, North Carolina. We started it to get safety paperwork off the clipboard and somewhere you can find it later.</p>
-      <p class="rbh">Today it's in use at RBH Insulation in Southern California. Charlotte is home, but we can set up a company anywhere.</p>
+      <p>TeamWorkt Safety is a small company in Charlotte, North Carolina. We built it to get safety paperwork off the clipboard and somewhere you can find it later.</p>
       <p>The app is meant to guide your people through a report, not the other way around. If any part of it is confusing, we want to hear about it.</p>
+      <div class="span-line">
+        <p class="end"><b>Southern California</b>RBH Insulation uses TeamWorkt here</p>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="end right"><b>Charlotte, NC</b>Where we are</p>
+      </div>
+      <p class="span-note">We can set up a company anywhere.</p>
     </div>
     <div class="placeholder" role="img" aria-label="Photo placeholder">
       <div><b>Photo to add</b>The people behind TeamWorkt, or the app in use on a real jobsite (with the customer's OK).</div>
@@ -229,35 +199,35 @@
   </div>
 </section>
 
-<!-- Security summary -->
 <section class="sec" id="security" aria-labelledby="sec-h">
   <div class="wrap sec-grid">
     <div>
       <h2 id="sec-h">Security, in plain terms</h2>
-      <p>How customer data is kept apart and protected, and what we don't claim yet.</p>
+      <ul class="sec-list">
+        <li>Each customer's deployment is designed to run on its own, with its own database, instead of sharing one with every other company.</li>
+        <li>Who can see and change reports is set by role, and it's checked against a go-live checklist before any real data goes in.</li>
+        <li>Everything between your crew's phones and TeamWorkt travels over HTTPS.</li>
+      </ul>
+    </div>
+    <div class="no-claim">
+      <h3>What we don't claim</h3>
+      <p>TeamWorkt Safety is not SOC 2 audited or ISO/IEC 27001 certified. We won't say it is until independent auditors have actually done that work.</p>
       <p><a href="security.html">Read the full security page</a></p>
     </div>
-    <dl class="facts">
-      <div><dt>Your own setup</dt><dd>Each customer's deployment is designed to run on its own, with its own database, instead of sharing one with every other company.</dd></div>
-      <div><dt>Access checked before launch</dt><dd>Who can see and change reports is set by role, and it's reviewed against a checklist before any real data goes in.</dd></div>
-      <div><dt>Encrypted connections</dt><dd>Everything between your crew's phones and TeamWorkt travels over HTTPS.</dd></div>
-      <div class="plain"><dt>What we don't claim</dt><dd>TeamWorkt Safety is not SOC 2 audited or ISO/IEC 27001 certified. We won't say otherwise until independent auditors have actually done that work.</dd></div>
-    </dl>
   </div>
 </section>
 
-<!-- Contact -->
 <section class="contact" id="contact" aria-labelledby="contact-h">
   <div class="wrap contact-grid">
     <div class="contact-copy">
       <h2 id="contact-h">Book a 15-minute walkthrough</h2>
-      <p>You'll talk with a person at TeamWorkt, not a sales queue. We'll show you the crew's form and the manager's screen using sample data, and answer questions about how it would fit your company.</p>
+      <p>You'll talk with a person at TeamWorkt, not a sales queue. We'll show you the crew's form and the manager's screen with sample data, and answer questions about how it would fit your company.</p>
       <p>We'll go over pricing on the call. TeamWorkt is meant for small companies, and it's priced with that in mind.</p>
       <p>If it looks like a fit, we can give you demo access afterward so you can try it on your own time.</p>
       <p class="alt">Rather write? <a href="mailto:hello@teamworktsafety.com">hello@teamworktsafety.com</a><br>Already a customer? <a href="mailto:support@teamworktsafety.com">support@teamworktsafety.com</a></p>
     </div>
 
-    <div class="form-sheet">
+    <div class="form-card">
       <div id="contact-success" class="form-msg contact-success" role="status" aria-live="polite">Walkthrough request received. We'll be in touch soon to find a time.</div>
       <div id="contact-error" class="form-msg contact-error" role="alert" aria-live="assertive">Your request didn't go through. Email hello@teamworktsafety.com and we'll get back to you.</div>
       <h3>Walkthrough request</h3>

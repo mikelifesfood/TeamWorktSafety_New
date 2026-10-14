@@ -64,26 +64,30 @@ Do not loosen the Content-Security-Policy when adding future third-party scripts
 
 SITE REDESIGN (OCTOBER 2026)
 ----------------------------
-All four public pages now share one stylesheet: assets/site.css. Page-level <style> blocks were removed.
+All four public pages share one stylesheet: assets/site.css. Page-level <style> blocks were removed.
+
+Colors are taken from the TeamWorkt app so the site and the product match (flat, no gradients):
+- #071c31 app sidebar navy, #0b315c theme navy, #174f86 app button blue, #1c64a5 report-header blue
+- #f3f6fa app background, #d6e0ea app borders, #102236 app text
+Green and red appear only in the contact form's success and error messages.
 
 Fonts (Google Fonts, already allowed by the CSP in vercel.json):
-- Zilla Slab: headings
-- Public Sans: body text
-- Kalam: hand-written notes only (photo, paper-form and dashboard annotations)
+- Big Shoulders: headings and the jobsite sign (a signage typeface)
+- Atkinson Hyperlegible: everything people read (designed by the Braille Institute for legibility)
 
-Colors (flat, no gradients): navy #011840 (from the logo wordmark), safety yellow #f7c600,
-ballpoint blue #1f5fd6 (hand-written notes only), paper #fbfaf6, manila #ece1c3, concrete gray #5b6370.
+Home page hero: the "NOTICE" sign is HTML, not an image. Its QR code is inline SVG and encodes
+https://teamworktsafety.com/#crew. If the page anchor changes, regenerate the code.
 
 New assets:
 - assets/jobsite-framing-crew.webp: the original hero photo with the baked-in blue fade cropped off.
 - assets/teamworkt-safety-logo-trim.png: the original logo with empty margins trimmed, sized for the header.
 The original teamworkt-construction-hero.webp and teamworkt-safety-logo.png are kept, unchanged.
 
-Home page placeholder still to fill:
+Placeholder still to fill:
 - "Who's behind it" section: dashed box marked "Photo to add". Replace with a real photo when one is available.
 
 Policy pages: wording in security.html, privacy.html and terms.html is unchanged. Only the layout changed.
 The 01-09 numbers on the security controls were dropped because the list is not a sequence.
 
 Contact form: field names, IDs, honeypot, /api/contact endpoint and success/error handling are unchanged.
-Service worker cache name bumped to v6 so returning visitors get the new files.
+Service worker cache name is v6 so returning visitors get the new files.
