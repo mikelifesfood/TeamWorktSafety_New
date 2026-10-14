@@ -1,0 +1,31 @@
+TEAMWORKT SAFETY DEMO REPOSITORY
+
+PURPOSE
+This repository is a self-contained sales demonstration for TeamWorkt Safety. It includes a one-page marketing website, a browser-only employee reporting experience, a management dashboard, and seeded demo records that can move through the full workflow without a live database.
+
+FILES
+index.html      Public one-page marketing website. Use this as the Vercel production entry page.
+report.html     Employee/mobile safety reporting demonstration.
+dashboard.html  Management dashboard demonstration.
+demo.html       Guided demo launcher with reset control and suggested demo sequence.
+demo-db.js      Browser-only demo data layer. No live Supabase connection is required.
+
+RECOMMENDED SALES DEMO
+1. Start at index.html if the prospect has not seen the product before.
+2. Open demo.html for the guided presentation.
+3. Open report.html and submit one quick sample report.
+4. Open dashboard.html. The newly submitted sample report will appear in that same browser/domain.
+5. Use the seeded records to jump directly to assignment, completion, verification, and closure.
+6. Reset the sample data from demo.html before the next sales conversation.
+
+IMPORTANT DEMO BEHAVIOR
+Demo data is stored only in the browser. It is not sent to Supabase or another database. Data created on one device or browser will not appear on another device. This is intentional for a safe sales demonstration.
+
+DEPLOYMENT POSITIONING
+Production customer deployments can use a company-controlled subdomain such as safety.yourcompany.com when the customer can provide the required DNS record. The browser-based product is intended to work across phones, tablets, and computers without requiring a separate native mobile app. PWA home-screen support can be enabled for customer deployments.
+
+PRODUCT POSITIONING
+The demo shows a closed-loop operating workflow for safety reporting and corrective action. It should not be presented as legal advice, regulatory advice, or a guarantee of compliance.
+
+CURRENT SALES RULE
+Do not add features simply because they would be interesting. Only change the product when a real prospect exposes a material blocker to selling or onboarding the first customer.

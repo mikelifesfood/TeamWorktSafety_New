@@ -60,3 +60,30 @@ Vercel response security headers are defined in vercel.json and apply site-wide.
 The policy restricts content to TeamWorkt-owned resources plus the Google Fonts hosts already used by the marketing pages.
 The contact form continues to POST only to the same-origin /api/contact endpoint; BREVO_API_KEY remains server-side.
 Do not loosen the Content-Security-Policy when adding future third-party scripts unless the new source is reviewed and intentionally approved.
+
+
+SITE REDESIGN (OCTOBER 2026)
+----------------------------
+All four public pages now share one stylesheet: assets/site.css. Page-level <style> blocks were removed.
+
+Fonts (Google Fonts, already allowed by the CSP in vercel.json):
+- Zilla Slab: headings
+- Public Sans: body text
+- Kalam: hand-written notes only (photo, paper-form and dashboard annotations)
+
+Colors (flat, no gradients): navy #011840 (from the logo wordmark), safety yellow #f7c600,
+ballpoint blue #1f5fd6 (hand-written notes only), paper #fbfaf6, manila #ece1c3, concrete gray #5b6370.
+
+New assets:
+- assets/jobsite-framing-crew.webp: the original hero photo with the baked-in blue fade cropped off.
+- assets/teamworkt-safety-logo-trim.png: the original logo with empty margins trimmed, sized for the header.
+The original teamworkt-construction-hero.webp and teamworkt-safety-logo.png are kept, unchanged.
+
+Home page placeholder still to fill:
+- "Who's behind it" section: dashed box marked "Photo to add". Replace with a real photo when one is available.
+
+Policy pages: wording in security.html, privacy.html and terms.html is unchanged. Only the layout changed.
+The 01-09 numbers on the security controls were dropped because the list is not a sequence.
+
+Contact form: field names, IDs, honeypot, /api/contact endpoint and success/error handling are unchanged.
+Service worker cache name bumped to v6 so returning visitors get the new files.

@@ -1,12 +1,12 @@
 {
   "name": "TeamWorkt Safety",
   "short_name": "TeamWorkt Safety",
-  "description": "Simple safety reporting and corrective action from report to closure.",
+  "description": "Near-miss and injury reporting for small companies, from the first report to a closed fix.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f8fc",
-  "theme_color": "#0b315c",
+  "background_color": "#fbfaf6",
+  "theme_color": "#011840",
   "icons": [
     {
       "src": "./assets/app-icon-192.png",
